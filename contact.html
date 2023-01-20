@@ -5,18 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        h1{
+            text-align: center;
+            background-color: blue;
+            margin: auto;
+            color: white;
+            width: 70%;
+        }
+        #myP{
+            color: blueviolet;
+        }
+        .nav{
+            margin: 10px;
+            padding: 10px;
+        }
+        .nav a{
+            color: #00f;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .nav a:hover{
+            background-color: #00f;
+            color: #fff;
+            border-radius: 50px;
+        }
+        table{
+            background-color: #23e;
+            width: 100%;
+            border: 1px solid #fff;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td{
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 15px;
+        }
+        tr{
+            text-align: center;
+        }
+    </style>
 </head>
-<body style="background-color: lightblue;">
+<body>
     <!--This is the heading-->
     <!-- -->
-    <h1 style="text-align: center; background-color: blue; margin: auto; color: white; width: 70%;">
+    <h1>
         This is Contact page
     </h1>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+    </div>
     <hr>
     <!-- 
         This is about text formating
     -->
-    <p style="color: blueviolet;">
+    <p id="myP">
         Lorem <b style="color: red;"> ipsum dolor</b> sit <sup style="color: red;">amet</sup>,
         <i style="color: red;">consectetur</i> adipisicing elit.
         <strong style="color: red;">Enim fugiat</strong>  labore <sub style="color: red;">sit</sub> eaque reiciendis
@@ -45,5 +94,56 @@
     <p>
         <cite>The Scream</cite> by Edward Munch. painted in 1893
     </p>
+    <table>
+        <caption>Contact List</caption>
+        <tr>
+            <th>S/N</th>
+            <th>Name</th>
+            <th>Phone number</th>
+            <th>Picture</th>
+            <th colspan="2">Address</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td style="background-color: #f00;">Ikenna</td>
+            <td>07062682820</td>
+            <td><img src="images/bg2.jpg" width="100px" height="100px" alt=""></td>
+            <td>Mile 50</td>
+            <td>Water works</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John</td>
+            <td>08045653423</td>
+            <td><img src="images/bg3.jpg" width="100px" height="100px" alt=""></td>
+            <td>Mile 50</td>
+            <td>Water works</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Emmanuel</td>
+            <td>09033445566</td>
+            <td><img src="images/bg1.jpg" width="100px" height="100px" alt=""></td>
+            <td>Mile 50</td>
+            <td>Water works</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Chinedu</td>
+            <td>07044556677</td>
+            <td><img src="images/bg2.jpg" width="100px" height="100px" alt=""></td>
+            <td>Mile 50</td>
+            <td>Water works</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>David</td>
+            <td>09066778899</td>
+            <td><img src="images/bg3.jpg" width="100px" height="100px" alt=""></td>
+            <td>Mile 50</td>
+            <td>Water works</td>
+        </tr>
+    </table>
+    
 </body>
 </html>
