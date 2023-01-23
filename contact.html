@@ -48,12 +48,21 @@
         tr{
             text-align: center;
         }
+        .list_nav ul li{
+            list-style-type: none;
+        }
+        /* .my_ol_list li{
+            list-style-type: upper-roman;
+        }
+        .my_ul_list li{
+            list-style-type: square;
+        } */
     </style>
 </head>
 <body>
     <!--This is the heading-->
     <!-- -->
-    <h1>
+    <h1 id="top">
         This is Contact page
     </h1>
     <div class="nav">
@@ -62,6 +71,19 @@
         <a href="about.html">About Us</a>
     </div>
     <hr>
+    <div class="list_nav">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </div>
     <!-- 
         This is about text formating
     -->
@@ -104,7 +126,7 @@
             <th colspan="2">Address</th>
         </tr>
         <tr>
-            <td>1</td>
+            <td >1</td>
             <td style="background-color: #f00;">Ikenna</td>
             <td>07062682820</td>
             <td><img src="images/bg2.jpg" width="100px" height="100px" alt=""></td>
@@ -144,6 +166,53 @@
             <td>Water works</td>
         </tr>
     </table>
-    
+    <div class="my_list">
+        <h4>Ordered List</h4>
+        <ol class="my_ol_list" type="A">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <h4>Unordered List</h4>
+        <ul class="my_ul_list" type="square">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        <h4>Nesting lists</h4>
+        <ol>
+            <li>Frontend
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+            
+            <li>Backend
+                <ul>
+                    <li>C#</li>
+                    <li>PHP</li>
+                    <li>Python</li>
+                </ul>
+            </li>
+            <li>Mobile
+                <ul>
+                    <li>Flutter</li>
+                    <li>Kotlin</li>
+                    <li>Swift</li>
+                    <li>React Nativ</li>
+                </ul>
+            </li>
+        </ol>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+    </div>
+    <a href="#top">Top</a>
 </body>
 </html>
