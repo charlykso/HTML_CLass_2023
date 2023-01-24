@@ -51,12 +51,16 @@
         .list_nav ul li{
             list-style-type: none;
         }
-        /* .my_ol_list li{
-            list-style-type: upper-roman;
+        .form{
+            margin: 10px;
+            padding: 10px;
         }
-        .my_ul_list li{
-            list-style-type: square;
-        } */
+        .form input{
+            margin: 5px;
+            width: 100%;
+            padding: 10px;
+        }
+        
     </style>
 </head>
 <body>
@@ -212,7 +216,31 @@
             <dt>Milk</dt>
             <dd>- white cold drink</dd>
         </dl>
-    </div>
+    </div >
+    <iframe src="index.html" frameborder="0"></iframe>
+    <fieldset>
+        <legend>Register form</legend>
+        <form action="signin.html" method="GET" class="form">
+            <!-- <label for="Username">Username</label> -->
+            <input type="text" value="" placeholder="Username"><br>
+            <!-- <label for="Password">Password</label> -->
+            <input type="password" placeholder="Password"><br>
+            <label for="date">Date</label>
+            <input type="date"><br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female <br>
+            <label for="Courses">Course</label>
+            <input type="checkbox" value="HTML">HTML
+            <input type="checkbox" value="CSS">CSS
+            <input type="checkbox" value="JS" >JavaScript 
+            <br>
+            <label for="picture">Picture</label>
+            <input type="file"><br>
+            <textarea name="" id="" placeholder="Comments" cols="30" rows="10"></textarea><br>
+            <input type="submit" value="SignIn">
+        </form>
+    </fieldset>
     <a href="#top">Top</a>
 </body>
 </html>
