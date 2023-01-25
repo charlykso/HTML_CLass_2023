@@ -73,6 +73,7 @@
         <a href="index.html">Home</a>
         <a href="contact.html">Contact Us</a>
         <a href="about.html">About Us</a>
+        <a href="service.html">Services</a>
     </div>
     <hr>
     <div class="list_nav">
@@ -220,7 +221,7 @@
     <iframe src="index.html" frameborder="0"></iframe>
     <fieldset>
         <legend>Register form</legend>
-        <form action="signin.html" method="GET" class="form">
+        <form action="signin.php" method="GET" class="form" enctype="multipart/form-data">
             <!-- <label for="Username">Username</label> -->
             <input type="text" value="" placeholder="Username"><br>
             <!-- <label for="Password">Password</label> -->
@@ -238,9 +239,22 @@
             <label for="picture">Picture</label>
             <input type="file"><br>
             <textarea name="" id="" placeholder="Comments" cols="30" rows="10"></textarea><br>
+            <select name="experience" id="">
+                <option value="" selected>Select your year of experience</option>
+                <option value="1-2years">1 - 2 years</option>
+                <option value="2-4years" >2 - 4 years</option>
+                <option value="4-6years">4 - 6 years</option>
+            </select>
             <input type="submit" value="SignIn">
+            <input type="reset" value="Reset">
         </form>
     </fieldset>
+    <div id="demo"></div>
+    <script>
+
+    </script>
+
+
     <a href="#top">Top</a>
 </body>
 </html>
