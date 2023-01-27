@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="free web tutorials">
+    <meta name="keywords" content="HTM, CSS, JS, JAVA">
+    <meta http-equiv="refresh" content="30">
+    <meta name="author" content="Ikenna Remigius">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1 id="logo">Logo</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1 id="greet">Hello name</h1>
+            <button onclick="getName();">Get name</button><br><br>
+            <button id="changeColor" onclick="setColor();">change color</button>
+            <h1>This is the main text</h1>
+            <p>This is the paragraph</p>
+            <button id="showDate" onclick="document.getElementById('demo').innerHTML = 'This is me'">Click Me</button>
+            <p id="demo"></p>
+            <div class="entities">
+                <p>Lorem ipsum <span style="color: aqua;">d</span><span style="color: bisque;">o</span><span style="color: blue;">l</span><span style="color: red;">o</span><span style="color: rgb(238, 155, 155);">r</span> sit amet.</p>
+                <p>less than <span>&lt;</span> <span>&gt;</span></p>
+            </div>
+            <ul class="addItem">
+                <li>first Item</li>
+            </ul>
+            <button id="clickAdd">Add Item</button>
+        </section>
+    </div>
+    <script>
+        function setColor() {
+            // alert("this is the function");
+            document.getElementById('logo').style.color = 'yellow';
+        };
+        function getName() {
+            const name = prompt('Enter your name');
+            document.getElementById('greet').innerHTML = 'Hello ' +name;
+        };
+        $(function () {
+            $('#clickAdd').click(function () {
+                newItem = "<li>New Item </li>";
+                $('.addItem').append(newItem);
+            });
+        });
+    </script>
+    <noscript>
+        Sorry your browser dosen't support JavaScript
+    </noscript>
+</body>
+</html>
