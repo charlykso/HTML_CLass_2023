@@ -6,10 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="free web tutorials">
     <meta name="keywords" content="HTM, CSS, JS, JAVA">
-    <meta http-equiv="refresh" content="30">
+    <!-- <meta http-equiv="refresh" content="30"> -->
     <meta name="author" content="Ikenna Remigius">
-    <title>Document</title>
+    <title>Listacc</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+    <style>
+        .red{
+            color: #f00;
+        }
+        .yellow{
+            color: yellow;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -32,7 +41,7 @@
             <button id="changeColor" onclick="setColor();">change color</button>
             <h1>This is the main text</h1>
             <p>This is the paragraph</p>
-            <button id="showDate" onclick="document.getElementById('demo').innerHTML = 'This is me'">Click Me</button>
+            <button id="showDate" onclick="document.getElementById('demo').innerHTML = Date()">Click Me</button>
             <p id="demo"></p>
             <div class="entities">
                 <p>Lorem ipsum <span style="color: aqua;">d</span><span style="color: bisque;">o</span><span style="color: blue;">l</span><span style="color: red;">o</span><span style="color: rgb(238, 155, 155);">r</span> sit amet.</p>
@@ -43,11 +52,70 @@
             </ul>
             <button id="clickAdd">Add Item</button>
         </section>
+        <div class="tab">
+            <table>
+                <caption>Contact List</caption>
+                <tr>
+                    <th>S/N</th>
+                    <th>Name</th>
+                    <th>Phone number</th>
+                    <th>Picture</th>
+                    <th colspan="2">Address</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td style="background-color: #f00;">Ikenna</td>
+                    <td>07062682820</td>
+                    <td><img src="images/bg2.jpg" width="100px" height="100px" alt=""></td>
+                    <td>Mile 50</td>
+                    <td>Water works</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John</td>
+                    <td>08045653423</td>
+                    <td><img src="images/bg3.jpg" width="100px" height="100px" alt=""></td>
+                    <td>Mile 50</td>
+                    <td>Water works</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Emmanuel</td>
+                    <td>09033445566</td>
+                    <td><img src="images/bg1.jpg" width="100px" height="100px" alt=""></td>
+                    <td>Mile 50</td>
+                    <td>Water works</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Chinedu</td>
+                    <td>07044556677</td>
+                    <td><img src="images/bg2.jpg" width="100px" height="100px" alt=""></td>
+                    <td>Mile 50</td>
+                    <td>Water works</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>David</td>
+                    <td>09066778899</td>
+                    <td><img src="images/bg3.jpg" width="100px" height="100px" alt=""></td>
+                    <td>Mile 50</td>
+                    <td>Water works</td>
+                </tr>
+            </table>
+        </div>
+        <div class="min_height">
+            <h4>This is for height and width</h4>
+        </div>
     </div>
     <script>
         function setColor() {
             // alert("this is the function");
             document.getElementById('logo').style.color = 'yellow';
+            // const item = document.getElementById('logo');
+            // if (item.className === 'red') {
+                
+            // }
         };
         function getName() {
             const name = prompt('Enter your name');
