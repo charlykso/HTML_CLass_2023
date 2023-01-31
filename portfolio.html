@@ -11,6 +11,12 @@
     <title>Listacc</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="css/style2.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <!-- fontawesome cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+    
     <style>
         .red{
             color: #f00;
@@ -51,6 +57,30 @@
                 <li>first Item</li>
             </ul>
             <button id="clickAdd">Add Item</button>
+            <div class="icons">
+                <span class="fa fa-car"></span>
+                <i class="fas fa-car"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-user"></i>
+                <i class="fa fa-trash"></i>
+                <i class="fa fa-file"></i>
+                <i class="fa fa-edit"></i>
+                <form action="">
+                    <div>
+                        <i class="fas fa-user"></i><input type="text" name="username" placeholder="Username" id="">
+                    </div>
+                    <div>
+                        <i class="fas fa-lock"></i><input type="password" name="" id="" placeholder="Password">
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div class="bootstrap-icons">
+                <i class="bi bi-alarm-fill"></i>
+                <i class="bi bi-airplane-engines-fill"></i>
+                <i class="bi bi-calendar-check"></i>
+            </div>
         </section>
         <div class="tab">
             <table>
@@ -104,7 +134,28 @@
                 </tr>
             </table>
         </div>
-        <div class="min_height">
+        <div class="text-example">
+            <p id="innerText" class="before">
+                Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Autem voluptatem, ipsam ad optio 
+                impedit modi iure est voluptates 
+                corrupti quisquam!
+                Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Tenetur odit culpa asperiores 
+                deleniti vel beatae dolores ipsam, 
+                earum accusantium, natus tempora rem 
+                architecto pariatur in iusto labore 
+                enim fuga reiciendis accusamus corrupti, 
+                est reprehenderit eum! Itaque harum, quas 
+                laboriosam, ducimus amet repudiandae placeat 
+                dolorem nostrum fuga quidem sapiente quam 
+                cupiditate.
+            </p>
+            <button id="see-more" onclick="seeMore();">See more</button>
+        </div>
+        <div class="footer">
             <h4>This is for height and width</h4>
         </div>
     </div>
@@ -127,6 +178,12 @@
                 $('.addItem').append(newItem);
             });
         });
+        function seeMore(){
+            var elem = document.getElementById('innerText');
+            elem.classList.remove('before');
+            elem.classList.add('seeMore');
+            document.getElementById('see-more').style.display = 'none';
+        }
     </script>
     <noscript>
         Sorry your browser dosen't support JavaScript
