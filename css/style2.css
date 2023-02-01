@@ -39,6 +39,7 @@ header{
     top: 0;
     background-color: skyblue;
     /* opacity: 0.5; */
+    z-index: 1;
 }
 header nav{
     margin: 10px 0 10px 0;
@@ -67,6 +68,7 @@ nav ul li a{
 nav ul li a:hover{
     background-color: #fff;
     color: #000;
+    cursor: text;
 }
 div.footer{
     min-height: 80px;
@@ -111,6 +113,9 @@ div.footer h4{
     letter-spacing: 2px;
     line-height: 1.5;
 }
+.tab{
+    overflow-x: auto;
+}
 .tab table{
     width: 100%;
     border-collapse: collapse;
@@ -123,4 +128,29 @@ div.footer h4{
 }
 .icons form{
     margin: 20px;
+}
+.forms form{
+    /* display: none; */
+    /* visibility: hidden; */
+}
+.side-img{
+    position: absolute;
+    width: 500px;
+    top: 150px;
+    right: 10px;
+    z-index: -0.5;
+}
+.side-img .img img{
+    width: 200px;
+    float: left;
+}
+.side-img .img p{
+    text-align: justify;
+}
+.side-img .img{
+    margin-bottom: 10px;
+}
+.side-img .side-text p{
+    white-space: nowrap;
+    overflow: auto;
 }

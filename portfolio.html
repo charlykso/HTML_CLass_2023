@@ -34,7 +34,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" >Home</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="service.html">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
@@ -66,20 +66,59 @@
                 <i class="fa fa-trash"></i>
                 <i class="fa fa-file"></i>
                 <i class="fa fa-edit"></i>
-                <form action="">
-                    <div>
-                        <i class="fas fa-user"></i><input type="text" name="username" placeholder="Username" id="">
-                    </div>
-                    <div>
-                        <i class="fas fa-lock"></i><input type="password" name="" id="" placeholder="Password">
-                    </div>
-                    <button type="submit">Login</button>
-                </form>
+                <div class="forms">
+                    <form action="">
+                        <h4>Login</h4>
+                        <div>
+                            <i class="fas fa-user"></i><input type="text" name="username" placeholder="Username" id="">
+                        </div>
+                        <div>
+                            <i class="fas fa-lock"></i><input type="password" name="" id="" placeholder="Password">
+                        </div>
+                        <button type="submit">Sign In</button>
+                    </form>
+                    <form action="">
+                        <h4>Register</h4>
+                        <div>
+                            <i class="fas fa-user"></i><input type="text" name="username" placeholder="Username" id="">
+                        </div>
+                        <div>
+                            <i class="fas fa-lock"></i><input type="password" name="" id="" placeholder="Password">
+                        </div>
+                        <button type="submit">Sign up</button>
+                    </form>
+                </div>
             </div>
             <div class="bootstrap-icons">
                 <i class="bi bi-alarm-fill"></i>
                 <i class="bi bi-airplane-engines-fill"></i>
                 <i class="bi bi-calendar-check"></i>
+            </div>
+            <div class="side-img">
+                <div class="img">
+                    <p>
+                        <img src="images/bg2.jpg" alt="">
+                        Lorem, ipsum dolor sit amet consectetur 
+                        adipisicing elit. Rerum laudantium deserunt 
+                        reiciendis corrupti quidem. Voluptatum 
+                        excepturi et voluptas iste optio, enim 
+                        corporis atque aliquam itaque praesentium 
+                        debitis mollitia vitae distinctio aliquid 
+                        corrupti consequuntur explicabo quam nihil 
+                        ab suscipit! Unde voluptates in earum ex 
+                        illo quos reprehenderit inventore esse nam 
+                        voluptatibus.
+                    </p>
+                </div>
+                <div class="side-text">
+                    <p>
+                        Lorem ipsum dolor, sit amet 
+                        consectetur adipisicing elit. 
+                        Rerum sit accusamus quo quas 
+                        vero natus nam officiis ea nobis 
+                        corrupti.
+                    </p>
+                </div>
             </div>
         </section>
         <div class="tab">
@@ -180,9 +219,14 @@
         });
         function seeMore(){
             var elem = document.getElementById('innerText');
-            elem.classList.remove('before');
-            elem.classList.add('seeMore');
-            document.getElementById('see-more').style.display = 'none';
+            if (elem.classList.contains('before')) {
+                elem.classList.remove('before');
+                elem.classList.add('seeMore');
+            }else{
+                elem.classList.remove('seeMore');
+                elem.classList.add('before');
+            // document.getElementById('see-more').style.display = 'none';
+            }
         }
     </script>
     <noscript>
