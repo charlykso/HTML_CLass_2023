@@ -75,13 +75,16 @@ div.footer{
     background-color: skyblue;
     position: sticky;
     bottom: 0;
-    text-align: center;
     padding-top: 40px;
     border-top: 2px solid #fff;
     text-shadow: 2px 2px #000;
+    text-align: center;
 }
 div.footer h4{
     font-size: 1.5em;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 20px;
 }
 .text-example{
     background-color: aqua;
@@ -129,10 +132,10 @@ div.footer h4{
 .icons form{
     margin: 20px;
 }
-.forms form{
+/* .forms form{ */
     /* display: none; */
     /* visibility: hidden; */
-}
+/* } */
 .side-img{
     position: absolute;
     width: 500px;
@@ -153,4 +156,22 @@ div.footer h4{
 .side-img .side-text p{
     white-space: nowrap;
     overflow: auto;
+}
+div.footer .first{
+    display: inline-block;
+    width: 30%;
+    background-color: green;
+    padding: 10px;
+}
+.css-selector .main-selector{
+    margin: 10px;
+}
+.main-selector > p{
+    /* color: red; */
+}
+.main-selector .adjacent ~ p{
+    /* color: green; */
+}
+.main-selector .adjacent + p{
+    color: blue;
 }
