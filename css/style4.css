@@ -1,3 +1,23 @@
+header {
+    position: sticky;
+    top: 0;
+    /* top: 200px; */
+
+    
+}
+header nav {
+    background-color: yellow;
+    /* display: none;    */
+    /* visibility: hidden; */
+}
+/* footer{
+    position: fixed;
+    bottom: 0;
+} */
+
+
+
+
 .flex-container{
     display: flex;
     padding: 10px;
@@ -6,34 +26,39 @@
     /* flex-direction: column-reverse; */
     flex-wrap: wrap;
     /* justify-content: space-around; */
-    /* justify-content: center; */
-    /* align-items: stretch; */
+    justify-content: center;
+    align-items: center;
     /* align-content: space-evenly; */
+    flex-basis: 1fr 1fr 1fr;
 }
 .flex-item{
-    padding: 20px;
+    padding: 5px;
     background-color: #fff;
-    width: 10%;
+    /* width: 10%; */
     margin: 10px;
     height: 100px;
+}
+.flex-container .flex-item img{
+    width: 100%;
+    height: 100%;
 }
 .item1{
     /* order: 4; */
     /* flex-grow: 3; */
     /* flex: 0 0 200px;
     flex-shrink: 0; */
-    align-self: flex-end;
+    /* align-self: flex-end; */
 }
 .item4{
     /* order: 1; */
     /* flex-grow: 1; */
     /* flex: 2 0 100px; */
-    align-self: center;
+    /* align-self: center; */
 }
 .item2{
     /* order: 3; */
     /* flex-grow: 3; */
-    align-self: center;
+    /* align-self: center; */
 }
 .item3{
     /* order: 5; */
@@ -43,4 +68,44 @@
     /* order: 2; */
     /* flex-grow: 1; */
 }
+main{
+    display: flex;
+    max-height: 500px;
+    flex-basis: 400px auto;
+    background-color: blue;
+    padding: 10px;
+    flex-basis: 300px auto;
+}
+main .main-text{
+    width: 30%;
+}
+.inner-text-div {
+    background-color: red;
+    margin: 5px;
+    padding: 10px;
+}
+main .main-text .inner-text-div p{
+    /* overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
+main .flex-img-container{
+    display: flex;
+    flex-basis: 1fr 1fr 1fr 1fr;
+    background-color: purple;
+}
+main .flex-img-container .flex-img{
+    margin: 2px;
+}
+main .flex-img-container .flex-img img{
+    width: 100%;
+    height: 100%;
+}
+.form{
+    margin: 10px;
+}
