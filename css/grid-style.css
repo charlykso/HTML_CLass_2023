@@ -95,16 +95,112 @@
     grid-area: 1/2/2/4;
 }
 
-
-@media only screen and (max-width: 400px)
+@media only screen and (min-width: 360px)
 {
-    .sideBar{
-        background-color: antiquewhite;
-    }
-}
-@media only screen and (min-width: 300px)
-{
+    /* Styles for screen sizes 360px and larger go here */
     .sideBar{
         background-color: red;
+    }
+}
+@media only screen and (min-width: 480px)
+{
+    /* Styles for screen sizes 500px and larger go here */
+    .sideBar{
+        background-color: rgb(167, 223, 167);
+    }
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 60px auto;
+    }
+    .sideBar nav a span {
+        display: none;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .logo .main-logo{
+        display: none;
+    }
+    .menu .bars{
+        font-size: 2rem;
+    }
+    .sideBar nav a .nav-icons{
+        font-size: 1.5rem ;
+    }
+    .sideBar nav a{
+        margin: 10px 0 0 0;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a:hover{
+        color: #fff;
+    }
+    .contact-details {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sometext {
+        display: flex;
+        padding: 10px;
+        flex-wrap: wrap;
+        align-content: baseline;
+        /* min-height: 100vh; */
+        /* border: 1px solid red; */
+        align-items: flex-end;
+        gap: 2rem;
+    }
+    
+    .sometext .inner-text-div p{
+        text-align: justify;
+        border: 1px solid #000;
+        padding: 10px;
+    }
+    .top-footer{
+        display: flex;
+        background-color: rgb(167, 223, 167);
+        gap: 1rem;
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .top-footer .footer-text{
+        background-color: aquamarine;
+        padding: 10px;
+        text-align: justify;
+    }
+    .bottom-footer{
+        background-color: #F5ECE0;
+        /* text-align: center; */
+        min-height: 60px;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 720px) 
+{
+    /* Styles for screen sizes 768px and larger go here */
+    .sideBar {
+        background-color: blue;
+    }
+    .contact-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0 10px 0;
+    }
+
+    .contact-details p a {
+        color: #000;
+        text-decoration: none;
     }
 }
